@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products</title>
+    <meta name="description" content="All  our  products  are manufactured  as per International  Standards and Specifications given  by  the customer .We offer a  selection  of  dimensions,  types of  covering  and materials  for  special  fields  of application.We use  latest  technology  to  manufacture our products. Wires & Strips are manufactured  by continuous extrusion  machine which ensures bright annealed material free from any dust or surface defect which is most suitable for further insulation.">
+    <meta name="keywords" content="Bare Copper Wire, Bare Copper Tape, Bare Copper Conductor, Copper Wire, Bare Copper, Bare Copper Earthing Tape, Copper Earthing Tape, Copper Earthing Strip, Copper Flat Wire, Insulated Copper Wire, Flat Copper Wire, Flat Copper Conductor, Copper Earthing Wire, Copper Earth Wire, Copper Earth Strip, Copper Flat Manufacturers, Copper Flat Suppliers, Copper Strip Manufacturers, Copper Strip Suppliers, Bare Copper Wire Manufacturers, Copper Flat, Flat Copper Bar, Copper Earthing Strip, Copper Earthing Rod, Bare Aluminium Wire, Bare Aluminium Tape, Bare Aluminium Conductor, Aluminum Wire, Bare Aluminum Wire, Bare Aluminium Tape, Bare Aluminum Strips, Aluminium Earthing Tape, Aluminium Earthing Strip, Aluminium Flat Wire, Insulated Aluminium Wire, Flat Aluminium Wire, Flat Aluminium Conductor, Aluminium Earthing Wire, Aluminium Earth Wire, Aluminium Strips, Aluminium Flat Manufacturers, Aluminium Flat Suppliers, Aluminium Strip Manufacturers, Aluminium Strip Suppliers, Bare Aluminium Wire Manufacturers, Aluminium Flat, Flat Aluminium Bars, Flat Aluminium Wire, Flat Aluminium Extrusions, Aluminum Wire Manufacturers, enameled wire, enameled wires, enameled copper wire, enamelled copper wire, enameled aluminium wire, enameled aluminum wire, enamelled copper wire, enamelled aluminum wire, enamelled aluminium wire, enameled magnet wire, magnet wire, enamelled wire, aluminium enamelled wire,  aluminum enamelled wire, super enamelled aluminium wire, super enamelled aluminum wire, super enamelled copper wire, super enameled copper wire, super enamelled copper wire manufacturer, enamelled wire, enamelled copper wire India, enamelled copper wire suppliers, super enamelled aluminium wire, super enamelled copper winding wires, super enamelled copper wire manufacturer, magnet wire, winding wire, super enameled copper strip, super enamelled wire, enamelled copper wire suppliers, enamelled copper magnet wire, enamelled aluminium magnet wire, enamelled copper strip, enamelled copper strip manufacturer, enamelled copper strips, enameled copper wire manufacturers, enameled magnet wire, enamelled RECTANGULAR wire, RECTANGULAR enameled copper wire, flat enameled copper wire, flat enamelled copper wire, flat enamelled aluminium wire, enamelled flat aluminium wire, enamelled aluminium strip, enameled flat wire, enamelled flat aluminium wire, PEW copper wire, PEW, EWI, polyester insulated wire">
+    <link rel="stylesheet" href="style - Copy.css">
+    <link rel="icon" type="image/png" href="images/logoo.png">
+    </head>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="images/logoo.png" alt="Vimlesh logo" />
+      <span class="brand__name">Vimlesh Industries Pvt. Ltd.</span>
+    </a>
+
+    <!-- desktop nav -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="images/cat.pdf" class="btn-brochure" download>
+            Brochure<span class="arrow">↓</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- hamburger (mobile only) -->
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- mobile nav -->
+  <nav class="mobile-nav" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="infrastructure.html">Infrastructure</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="images/cat.pdf" class="btn-brochure" download>
+          Brochure<span class="arrow">↓</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<style>
+  :root{
+  --hdr-h-mobile: 64px;
+  --hdr-h-desktop: 80px;
+  --hdr-bg-dark: #ccc;
+}
+
+
+.site-header, .site-header * { box-sizing: border-box; }
+
+.site-header{
+  position: absolute;           
+  top: 0; left: 0; width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+.site-header__inner{
+  width: 100%;
+  margin: 0;
+  height: var(--hdr-h-desktop);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-left:0;
+}
+.brand__logo{ height: 38px; width: auto; }
+.brand__name{ color: #fff; font-weight: 700; font-size: 34px; justify-content: flex-start; align-items: center; margin-left: 10px;}
+
+
+.desktop-nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.desktop-nav a{
+  color: #fff; text-decoration: none; font-weight: 500;
+}
+.desktop-nav a:hover{ text-decoration: underline; }
+
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.menu-toggle span{
+  display: block;
+  width: 26px; height: 3px; background: #fff; transition: .3s;
+}
+
+
+.mobile-nav{
+  display: none;
+}
+
+/* ========= MOBILE ========= */
+@media (max-width: 768px){
+
+  .site-header{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: var(--hdr-bg-dark);
+    box-shadow: 0 2px 10px rgba(178, 118, 27, 0.557);
+  }
+  .site-header__inner{
+    height: var(--hdr-h-mobile);
+  }
+
+  body{ padding-top: var(--hdr-h-mobile); }
+
+  .brand__name{ font-size: 16px; }
+ 
+  .desktop-nav{ display: none; }
+  .menu-toggle{ display: inline-flex; }
+
+  .mobile-nav{
+    display: block;
+    position: fixed;
+    top: var(--hdr-h-mobile);
+    left: 0; right: 0;
+    background: var(--hdr-bg-dark);
+    overflow: hidden;
+    max-height: 0;                
+    transition: max-height .35s ease;
+
+  }
+  .mobile-nav.open{ max-height: 80vh; } 
+
+  .mobile-nav ul{
+    list-style: none;
+    padding: 14px 16px 22px;
+    display: grid;
+    gap: 12px;
+  }
+  .mobile-nav a{
+    color: #fff; text-decoration: none; font-size: 16px; padding: 10px 6px;
+    display: block; border-radius: 8px;
+  }
+  .mobile-nav a:hover{ background: rgba(255,255,255,.08); }
+
+  /* Optional: hamburger to X animation */
+  .menu-toggle[aria-expanded="true"] span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+}
+.btn-brochure {
+  background: #e79b0db8;
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-brochure:hover {
+  background: #e79b0d;
+}
+.btn-brochure .arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+</style>
+<script>
+  const menuBtn   = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+  </script>
+<body>
+  <h1>OUR PRODUCTS</h1>
+  <style>
+  body {
+    background-image:url(images/inf.jpeg);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color:white;
+    padding-top: 80px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-right: 4.5%;
+  }
+  
+  .product-card {
+    border: 2px solid #e79b0d;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px; 
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transform: translateY(-15px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .product-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .back-btn {
+    display: inline-block;
+    margin: 20px;
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  .navbar {
+    width:100%;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  </style>
+</head>
+<body>
+  <div class="product-grid">
+    <div class="product-card" title="Bare Copper Wire, Bare Copper Tape, Bare Copper Conductor, Copper Wire, Bare Copper, Bare Copper Earthing Tape, Copper Earthing Tape, Copper Earthing Strip, Copper Flat Wire, Insulated Copper Wire, Flat Copper Wire, Flat Copper Conductor, Copper Earthing Wire, Copper Earth Wire, Copper Earth Strip, Copper Flat Manufacturers, Copper Flat Suppliers, Copper Strip Manufacturers, Copper Strip Suppliers, Bare Copper Wire Manufacturers, Copper Flat, Flat Copper Bar, Copper Earthing Strip, Copper Earthing Rod, Bare Aluminium Wire, Bare Aluminium Tape, Bare Aluminium Conductor, Aluminum Wire, Bare Aluminum Wire, Bare Aluminium Tape, Bare Aluminum Strips, Aluminium Earthing Tape, Aluminium Earthing Strip, Aluminium Flat Wire, Insulated Aluminium Wire, Flat Aluminium Wire, Flat Aluminium Conductor, Aluminium Earthing Wire, Aluminium Earth Wire, Aluminium Strips, Aluminium Flat Manufacturers, Aluminium Flat Suppliers, Aluminium Strip Manufacturers, Aluminium Strip Suppliers, Bare Aluminium Wire Manufacturers, Aluminium Flat, Flat Aluminium Bars, Flat Aluminium Wire, Flat Aluminium Extrusions, Aluminum Wire Manufacturers">
+        <a href="bare.html">
+        <img src="images/barecopper.png" alt="Product 1" onclick="showDetails(1)">
+        <h3>Bare Copper/Wire strips</h3>
+        <button onclick="showDetails(1)" class="view-more-btn">View More</button>
+      </a>
+    </div>
+    <div class="product-card" title="Enamelled Copper Wire, Enameled Wire, Enameled Wires, Enameled Copper Wire, Enamelled Copper Wires, Enameled Aluminium Wire, Enameled Aluminum Wire, Enamelled Copper Wire, Enamelled Aluminum Wire, Enamelled Aluminium Wire, Enameled Magnet Wire, Magnet Wire, Enamelled Wire, Aluminium Enamelled Wire, Aluminum Enamelled Wire, Super Enamelled Aluminium Wire, Super Enamelled Aluminum Wire, Super Enamelled Copper Wire, Super Enameled Copper Wire, Super Enamelled Copper Wire Manufacturer, Enamelled Wire, Enamelled Copper Wire India, Enamelled Copper Wire Suppliers, Super Enamelled Aluminium Wire, Super Enamelled Copper Winding Wires, Super Enamelled Copper Wire Manufacturer, Magnet Wire, Winding Wire, Super Enameled Copper Strip, Super Enamelled Wire, Enamelled Copper Wire Suppliers, Enamelled Copper Magnet Wire, Enamelled Aluminium Magnet Wire, Enamelled Copper Strip, Enamelled Copper Strip Manufacturer, Enamelled Copper Strips, Enameled Copper Wire Manufacturers, Enameled Magnet Wire, Enamelled Rectangular Wire, Rectangular Enameled Copper Wire, Flat Enameled Copper Wire, Flat Enamelled Copper Wire, Flat Enamelled Aluminium Wire, Enamelled Flat Aluminium Wire, Enamelled Aluminium Strip, Enameled Flat Wire, Enamelled Flat Aluminium Wire, Pew Copper Wire, PEW, EWI, Polyester Insulated Wire">
+        <a href="enamel.html">
+        <img src="images/enamelled.png" alt="Product 2" onclick="showDetails(2)">
+        <h3>Enamelled Round Copper/Aluminium Wire</h3>
+        <button onclick="showDetails(2)" class="view-more-btn">View More</button>
+      </a>
+    </div>
+    <div class="product-card" title="Aluminium strips and foils, Aluminium Foil, Aluminium Strips, Aluminium Foils, Aluminium Tape, Aluminium Tapes, Aluminium Earthing Tape, Aluminium Earthing Strip, Aluminium Flat Wire, Insulated Aluminium Wire, Flat Aluminium Wire, Flat Aluminium Conductor, Aluminium Earthing Wire, Aluminium Earth Wire, Aluminium Strips, Aluminium Flat Manufacturers, Aluminium Flat Suppliers, Aluminium Strip Manufacturers, Aluminium Strip Suppliers, Bare Aluminium Wire Manufacturers, Aluminium Flat, Flat Aluminium Bars, Flat Aluminium Wire, Flat Aluminium Extrusions">
+      <a href="alu.html">
+        <img src="images/alu.png" alt="Product 3" onclick="showDetails(3)">
+        <h3>Aluminium strips and foils</h3>
+        <button onclick="showDetails(3)" class="view-more-btn">View More</button>
+      </a>
+    </div>
+      <div class="product-card" title="Fibreglass Wire, Fibreglass Copper Wire, Fibreglass Aluminium Wire, Fibreglass Aluminum Wire, Fibre Glass Copper Wire, Fibre Glass Aluminium Wire, Fibre Glass Aluminum Wire, Fibreglass Covered Copper Wire, Fibreglass Covered Copper Strip, Fibre Glass Covered Copper Wire, Fibre Glass Covered Aluminium Wire, Fibre Glass Covered Aluminum Wire, Fibreglass Insulated Wire, Fibre Glass Insulated Wire, Glass Insulated Wire, Glass Covered Copper Wire, Glass Insulated Wire, Glass Insulated Copper Wire, Glass Insulated Copper Strip, Glass Insulated Aluminium Wire, Glass Insulated Aluminum Wire, Glass Insulated Copper Conductor, Fibreglass Insulated Flat Copper Wire, Flat Copper Wire Insulated With Fibre Glass, Enamel Glass Insulated Wire, Enamelled And Glass Covered Wire">
+        <a href="fibre.html">
+          <img src="images/fibre.JPG" alt="Product 4" onclick="showDetails(4)">
+        <h3>Fibreglass Round & Flat Copper & Aluminium Wire</h3>
+        <button onclick="showDetails(4)" class="view-more-btn">View More</button>
+        </a>
+    </div>
+        <div class="product-card" title="Paper Insulated Copper Conductor, Paper Insulated Copper Wire, Paper Insulated Copper Strips, Paper Insulated Wire, Paper Insulated Aluminium Wire, Paper Insulated Aluminum Wire, Paper Covered Copper Conductors, Paper Covered Wire, Paper Insulated Flat Wire, Paper Covered Flat Copper Wire, Paper Covered Copper Strip, Paper Covered Copper Wire, Paper Covered Aluminum Wire, Paper Covered Aluminium Wire, Aluminium Paper CoverWire, Paper Insulated Aluminum Conductor, Paper Covered Aluminium Conductor DPC / TPC / MPC WIRES / STRIPS / CONDUCTORS">
+            <a href="paper.html">
+               <img src="images/ou.jpg" alt="Product 5" onclick="showDetails(5)">
+            <h3>Paper Covered Round/Rectangular Wire</h3>
+            <button onclick="showDetails(5)" class="view-more-btn">View More</button>
+        </a>
+    </div>
+      <div class="product-card" title="Kapton Insulated Copper Conductor, Kapton Insulated Copper Wire, Kapton Insulated Copper Strip, Kapton Covered Wire, Kapton Insulated Flat Wire, Kapton Covered Flat Copper Wire, Kapton Covered Copper Strip, Kapton Covered Copper Wire, Kapton Insulated Wires, Kapton Insulated Rectangular Wire, Kapton Insulated Strip, Kapton Covered Strip">
+        <a href="kapton.html">
+            <img src="images/Kapton Cov Strip.JPG" alt="Product 6" onclick="showDetails(6)">
+        <h3>Kapton Covered Round/Rectangular/ Flat Copper Wire</h3>
+        <button onclick="showDetails(6)" class="view-more-btn">View More</button>
+        </a>
+    </div>
+       <div class="product-card" title="Nomex Insulated Copper Conductor, Nomex Insulated Copper Wire, Nomex Insulated Copper Strips, Nomex Insulated Wire, Nomex Insulated Aluminium Wire, Nomex Insulated Aluminum Wire, Nomex Covered Copper Conductors, Nomex Covered Wire, Nomex Insulated Flat Wire, Nomex Covered Flat Copper Wire, Nomex Covered Copper Strip, Nomex Covered Copper Wire, Nomex Covered Aluminum Wire, Nomex Covered Aluminium Wire, Aluminium Nomex CoverWire, Nomex Insulated Aluminum Conductor, Nomex Covered Aluminium Conductor">
+          <a href="nomex.html">
+            <img src="images/Nomex Covered Strip.jpg" alt="Product 7" onclick="showDetails(7)">
+        <h3>Nomex Covered Round/Rectanglular/ Flat Copper & Aluminium Wire</h3>
+        <button onclick="showDetails(7)" class="view-more-btn">View More</button>
+       </a>
+    </div>
+        <div class="product-card" title="Mica Insulated Copper Conductor, Mica Insulated Copper Wire, Mica Insulated Copper Strips, Mica Insulated Wire, Mica Insulated Aluminium Wire, Mica Insulated Aluminum Wire, Mica Covered Copper Conductors, Mica Covered Wire, Mica Insulated Flat Wire, Mica Covered Flat Copper Wire, Mica Covered Copper Strip, Mica Covered Copper Wire, Mica Covered Aluminum Wire, Mica Covered Aluminium Wire, Aluminium Mica CoverWire, Mica Insulated Aluminum Conductor, Mica Covered Aluminium Conductor">
+            <a href="mica.html">
+               <img src="images/mica.jpg" alt="Product 8" onclick="showDetails(8)">
+            <h3>Mica Covered Round/Rectangular/ Flat Copper & Aluminium Wire</h3>
+            <button onclick="showDetails(8)" class="view-more-btn">View More</button>
+        </a>
+    </div>
+        <div class="product-card" title="Enamelled Copper Wire, Enameled Wire, Enameled Wires, Enameled Copper Wire, Enamelled Copper Wires, Enameled Aluminium Wire, Enameled Aluminum Wire, Enamelled Copper Wire, Enamelled Aluminum Wire, Enamelled Aluminium Wire, Enameled Magnet Wire, Magnet Wire, Enamelled Wire, Enamelled Copper Magnet Wire, Enamelled Aluminium Magnet Wire, Enamelled Copper Strip, Enamelled Copper Strip Manufacturer, Enamelled Copper Strips, Enameled Copper Wire Manufacturers, Enameled Magnet Wire, Enamelled Rectangular Wire, Rectangular Enameled Copper Wire, Flat Enameled Copper Wire, Flat Enamelled Copper Wire, Flat Enamelled Aluminium Wire, Enamelled Flat Aluminium Wire, Enamelled Aluminium Strip, Enameled Flat Wire, Enamelled Flat Aluminium Wire">
+            <a href="enamelract.html">
+              <img src="images/Enamelled Strip.JPG" alt="Product 9" onclick="showDetails(9)">
+            <h3>Enamelled rectangular/Flat Copper & Aluminium Wire</h3>
+            <button onclick="showDetails(9)" class="view-more-btn">View More</button>
+        </a>
+    </div>
+        <div class="product-card" title="Automobile Fields, Automobile Wire, Automobile Copper Wire, Automobile Aluminium Wire, Automobile Aluminum Wire, Automotive Wire, Automotive Copper Wire, Automotive Aluminium Wire, Automotive Aluminum Wire, Automobile Copper Strips, Automobile Aluminium Strips, Automobile Aluminum Strips, Automotive Copper Strips, Automotive Aluminium Strips, Automotive Aluminum Strips">
+            <a href="auto.html">
+               <img src="images/auto1.png" alt="Product 10"onclick="showDetails(10)">
+            <h3>Automobile Fields</h3>
+            <button onclick="showDetails(10)" class="view-more-btn">View More</button>
+        </a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Useful Links -->
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Manufacturing Process</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="infrastructure.html">infrastructure</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Links -->
+      <div class="footer-col">
+        <h4>Social Links</h4>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/vimlesh-industries-pvt-ltd---india/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Details -->
+      <div class="footer-col">
+        <h4>Contact Details</h4>
+        <p><i class="fa-solid fa-location-dot"></i>Vimlesh Industries pvt. Lmt, Hasamabad, Bahalgarh, Sonipat, Haryana<br>Sonipat, Haryana – 131001</p>
+        <p><i class="fa-solid fa-phone"></i>+0091-130-2981520, 9354807889</p>
+        <p><i class="fa-solid fa-envelope"></i><a href="mailto:sales@vimlesh.com">sales@vimlesh.com</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vimlesh Industries Pvt. Ltd. – All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script - Copy.js"></script>
+  <button id="backToTop" title="go to top">^</button>
+  <script>
+    const topBtn = document.getElementById("backToTop");
+  
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+  
+    topBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
